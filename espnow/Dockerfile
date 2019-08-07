@@ -14,7 +14,7 @@ COPY src "$WORKINGDIR"
 #  npm install --unsafe-perm -g pm2 && \
 #  npm install --unsafe-perm
 
-RUN apk add --no-cache nodejs-current
+RUN apk add --no-cache install nodejs npm
 #    apk del yarn && \
 #    npm set unsafe-perm true
 
