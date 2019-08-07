@@ -1,6 +1,6 @@
 {
     "name": "ESPNow",
-    "version": "0.0.0.4",
+    "version": "0.0.0.5",
     "slug": "espnow",
     "description": "ESPNow to MQTT Bridge",
     "auto_uart": true,
@@ -20,7 +20,7 @@
     ],
     "options": {
         "mqtt": {
-            "base_topic": "zigbee2mqtt",
+            "base_topic": "espnow2mqtt",
             "server": "mqtt://homeassistant",
             "user": "my_user",
             "password": "my_password"
