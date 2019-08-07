@@ -11,7 +11,6 @@ COPY src "$WORKINGDIR"
 RUN apt-get install nodejs npm \
     make gcc g++ linux-headers udev && \
   cd "/$WORKINGDIR" && \
-  npm install --unsafe-perm && \  
   npm install --unsafe-perm -g pm2 && \
   npm install --unsafe-perm && \
 
