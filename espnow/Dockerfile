@@ -9,10 +9,11 @@ ENV WORKINGDIR /espnow
 COPY src "$WORKINGDIR"
 
 #    make gcc g++ linux-headers udev && \
-RUN apk add --no-cache install nodejs npm \
-  cd "$WORKINGDIR" && \
-  npm install --unsafe-perm -g pm2 && \
-  npm install --unsafe-perm
+RUN apk add --no-cache install nodejs npm
+# \
+#  cd "$WORKINGDIR" && \
+#  npm install --unsafe-perm -g pm2 && \
+#  npm install --unsafe-perm
 
 COPY run.sh "/$WORKINGDIR/run.sh"
 WORKDIR "/$WORKINGDIR"
