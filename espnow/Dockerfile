@@ -6,7 +6,7 @@ ENV LANG C.UTF-8
 
 ENV WORKINGDIR /espnow
 
-COPY src "$WORKINGDIR"
+COPY src/* "$WORKINGDIR"
 
 RUN apk add --no-cache nodejs npm \
     make gcc g++ linux-headers udev
