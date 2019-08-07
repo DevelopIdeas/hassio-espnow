@@ -8,7 +8,7 @@ ENV WORKINGDIR /espnow
 
 COPY src "$WORKINGDIR"
 
-RUN apk add --update --no-cache curl jq nodejs npm \
+RUN apt-get install nodejs npm \
     make gcc g++ linux-headers udev && \
   cd "/$WORKINGDIR" && \
   npm install --unsafe-perm && \  
