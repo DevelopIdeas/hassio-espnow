@@ -4,7 +4,7 @@ FROM $BUILD_FROM
 # Add env
 ENV LANG C.UTF-8
 
-ENV WORKINGDIR /espnow
+ENV WORKINGDIR /espnow/
 
 COPY src/* "$WORKINGDIR"
 
