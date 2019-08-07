@@ -27,5 +27,21 @@
         "serial": {
             "port": "/dev/ttyACM0"
         }
+    },
+    "schema": {
+        "mqtt": {
+          "base_topic": "str",
+          "server": "str",
+          "ca": "str?",
+          "key": "str?",
+          "cert": "str?",
+          "user": "str?",
+          "password": "str?",
+          "client_id": "str?"
+        },
+        "serial": {
+          "port": "str",
+          "disable_led": "bool?"
+        }
     }
 }
